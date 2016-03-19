@@ -1,0 +1,6 @@
+<Query name="GetAllJobs">
+	<Class name="Job" prefix="org.aa4h.samples"
+		rowCountOnly="false" cacheEnabled="true" cacheMode="NORMAL">
+            <Equals name="jobId" value="1" type="long"/>
+	</Class>
+</Query>

@@ -1,0 +1,21 @@
+<!--
+This is a dynamic query
+ -->
+<Query name="findEmpsDynamically">
+	<Class name="Emp" prefix="test.com.heliosapm.aa4h.pojos">
+             <Equals name="mgr.empno" value="7839" type="int" />
+	</Class>
+</Query>
+<!--
+This is the same lookup using a named query and an indexed parameter
+ -->
+<NamedQuery name="findEmpsByManagerA">
+        <qparam id="0" value="7839" type="int"/>
+</NamedQuery>
+<!--
+This is a similar named query using named a named parameter
+ -->
+<NamedQuery name="findEmpsByManagerB">
+        <qparam name="managerId" value="7839" type="int"/>
+</NamedQuery>
+

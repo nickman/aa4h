@@ -1,0 +1,5 @@
+<Query name="GetAllEmps">
+	<NamedQuery name="findEmpsByManagerB">
+		<qparam name="managerId" value="7839" type="int"/>
+	</NamedQuery>
+</Query>

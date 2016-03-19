@@ -1,0 +1,5 @@
+<Query name="GetAllEmps">
+	<Class name="Emp" prefix="test.com.heliosapm.aa4h.pojos"
+		 rowCountOnly="true">
+	</Class>
+</Query>

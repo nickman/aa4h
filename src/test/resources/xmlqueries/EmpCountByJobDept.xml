@@ -1,0 +1,15 @@
+<Query name="GetAllEmps">
+	<Class name="Emp" prefix="test.com.heliosapm.aa4h.pojos"
+		rowCountOnly="false">
+	</Class>
+	<Alias name="job" value="j"/>
+	<Alias name="dept" value="d"/>
+	<Projections name="DepartmentJobCount">
+		<Projection type="rowCount" name="empno" alias="count"/>
+		<Projection type="groupProperty" name="j.jobName" alias="jobname"/>
+		<Projection type="groupProperty" name="d.dname" alias="department"/>
+		
+	</Projections>
+</Query>
+
+

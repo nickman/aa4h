@@ -1,0 +1,5 @@
+<Query name="GetAllJobs">
+	<Class name="Job" prefix="test.com.heliosapm.aa4h.pojos"
+		rowCountOnly="false">
+	</Class>
+</Query>
