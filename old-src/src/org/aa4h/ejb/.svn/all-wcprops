@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/aa4h~svn/!svn/ver/6/trunk/aa4h/src/org/aa4h/ejb
+END
+HibernateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aa4h~svn/!svn/ver/6/trunk/aa4h/src/org/aa4h/ejb/HibernateService.java
+END
+HibernateServiceBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/aa4h~svn/!svn/ver/6/trunk/aa4h/src/org/aa4h/ejb/HibernateServiceBean.java
+END
+HibernateServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/aa4h~svn/!svn/ver/6/trunk/aa4h/src/org/aa4h/ejb/HibernateServiceRemote.java
+END

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2007 2:21:23 PM by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+ <class batch-size="50" lazy="false"
+  name="org.aa4h.samples.Emp" schema="SCOTT2" table="EMP" rowid="rowid">
+	<cache 
+    usage="transactional" region="EmpCache"
+    include="all"
+	/>  
+  <id name="empno" type="int">
+   <column name="EMPNO" precision="4" scale="0"/>
+   <generator class="assigned"/>
+  </id>
+  
+  <many-to-one class="org.aa4h.samples.Emp"
+   embed-xml="false" fetch="join" name="mgr">
+   <column name="MGR" precision="4" scale="0"/>
+  </many-to-one>
+  <many-to-one class="org.aa4h.samples.Job"
+   fetch="join" name="job">
+   <column name="JOB_ID" not-null="true" precision="22" scale="0"/>
+  </many-to-one>
+  <many-to-one class="org.aa4h.samples.Dept"
+   fetch="join" name="dept">
+   <column name="DEPTNO" not-null="true" precision="2" scale="0"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="ename" type="string">
+   <column length="10" name="ENAME" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="hiredate" type="date">
+   <column length="7" name="HIREDATE" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="sal" type="float">
+   <column name="SAL" not-null="true" precision="7"/>
+  </property>
+  <property generated="never" lazy="false" name="comm" type="float">
+   <column name="COMM" not-null="true" precision="7"/>
+  </property>
+  <set embed-xml="false" fetch="join" inverse="true" name="emps" sort="unsorted">
+   <key>
+    <column name="MGR" precision="4" scale="0"/>
+   </key>
+   <one-to-many class="org.aa4h.samples.Emp"/>
+  </set>
+  <set batch-size="25" fetch="join" lazy="false" name="bonuses"
+   outer-join="true" sort="unsorted">
+   <key>
+    <column name="EMPNO" not-null="true" precision="4" scale="0" unique="true"/>
+   </key>
+   <one-to-many class="org.aa4h.samples.Bonus"/>
+  </set>
+ </class>
+ <query name="findEmpsByManagerA">from Emp e where e.mgr.empno = ?</query>
+ <query name="findEmpsByManagerB">from Emp e where e.mgr.empno = :managerId</query>
+</hibernate-mapping>

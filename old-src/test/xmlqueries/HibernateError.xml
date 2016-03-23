@@ -1,0 +1,12 @@
+<Query name="GetAllEmps">
+	<Class name="Emp" prefix="org.aa4h.samples"
+		rowCountOnly="false">
+	</Class>
+	<Alias name="job" value="j"/>
+	<Alias name="dept" value="d"/>
+	<Projections>
+		<Projection type="groupProperty" name="j.jobName" alias="j"/>
+		<Projection type="groupProperty" name="d.dnameXXX" alias="d"/>
+		<Projection type="count" name="empno"/>
+	</Projections>
+</Query>

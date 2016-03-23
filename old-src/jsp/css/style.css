@@ -1,0 +1,67 @@
+.browserToolbar {
+	font:13px arial,helvetica,clean,sans-serif; 
+	font-size:small; 
+	font-family:Arial,serif;
+	height:28px;
+	border: 1px solid #ccc;
+	padding-top:3px;
+
+}
+a {
+	text-decoration:none;
+}
+#tabTable td{
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+}
+#tabTable a{
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;
+	display:block;
+	background-color: #ddd;
+	text-decoration:none;
+}
+#tabTable a:hover{
+	background-color: #fff;
+}
+#tabTable .selected {
+	background-color: #eee;
+	font-weight:bold;
+}
+.editButton  {
+	width:25px;
+	height:24px;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;	
+	padding: 1px;
+	}
+.editButtonHover {
+	width:25px;
+	height:24px;
+	text-align:center;	
+	background-color: #aabbdd;
+	border: 1px outset #96968c;
+	cursor: pointer;
+	cursor: hand;
+	padding: 0px;
+}
+.editButtonDown {
+	width:25px;
+	height:24px;
+	text-align:center;	
+	background-color: #bcf;
+	border: 1px inset #96968c;
+	cursor: pointer;
+	cursor: hand;
+	padding: 0px;
+}
+body {
+	font-family:arial;
+	font-size:0.85em;
+	background-color:#FFFFFF;
+	background-image:url(images/twosupernova.jpg);
+	background-repeat:no-repeat;
+}

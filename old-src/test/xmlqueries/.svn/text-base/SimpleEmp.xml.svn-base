@@ -1,0 +1,5 @@
+<Query name="GetAllEmps">
+	<Class name="Emp" prefix="org.aa4h.samples"
+		rowCountOnly="false">
+	</Class>
+</Query>

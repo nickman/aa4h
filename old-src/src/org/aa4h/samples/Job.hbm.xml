@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2007 2:21:23 PM by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+ <class name="org.aa4h.samples.Job" schema="SCOTT2" table="JOB">
+  <id name="jobId" type="long">
+   <column name="JOB_ID" precision="22" scale="0"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" name="jobName" type="string">
+   <column length="30" name="JOB_NAME" not-null="true"/>
+  </property>
+  <set embed-xml="false" inverse="true" name="emps" sort="unsorted">
+   <key>
+    <column name="JOB_ID" not-null="true" precision="22" scale="0"/>
+   </key>
+   <one-to-many class="org.aa4h.samples.Emp"/>
+  </set>
+ </class>
+</hibernate-mapping>

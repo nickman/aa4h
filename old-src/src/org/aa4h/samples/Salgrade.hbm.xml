@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 13, 2007 2:21:23 PM by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.aa4h.samples.Salgrade" table="SALGRADE" schema="SCOTT2">
+        <id name="grade" type="long">
+            <column name="GRADE" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="losal" type="float">
+            <column name="LOSAL" precision="7" not-null="true" />
+        </property>
+        <property name="hisal" type="float">
+            <column name="HISAL" precision="7" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

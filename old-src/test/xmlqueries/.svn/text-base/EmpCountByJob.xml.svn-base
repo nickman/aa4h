@@ -1,0 +1,25 @@
+<Query name="GetAllEmps">
+	<Class name="Emp" prefix="org.aa4h.samples"
+		rowCountOnly="false">
+	</Class>
+	<Alias name="job" value="j"/>
+	<Projections>
+		<Projection type="groupProperty" name="j.jobName" alias="j"/>
+		<Projection type="count" name="empno"/>
+	</Projections>
+</Query>
+
+
+<!--
+<Query name="GetFilterQueryRowCount">
+	<Class name="Event" prefix="org.aa4h.samples" rowCountOnly="true">
+		<Or>
+			<Equals name="dueDateShort" value="20071218" type="int"/>
+		</Or>
+	</Class>
+	<Alias name="csr" value="csr"/>
+	<In name="csr.csrCd" value="YT" type="String[]" format=","/>
+	<Alias name="client" value="cl"/>
+	<In name="cl.svcctrNb" value="T6" type="String[]" format="," literal="true"/>
+</Query>
+-->

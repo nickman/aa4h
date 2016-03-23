@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries
+END
+EmpCountByJob.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/EmpCountByJob.xml
+END
+MultiQuery.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/MultiQuery.xml
+END
+NamedAndDynamicQuery.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/NamedAndDynamicQuery.xml
+END
+SimpleJob.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/SimpleJob.xml
+END
+SAXError.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/SAXError.xml
+END
+EmpCount.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/EmpCount.xml
+END
+HibernateError.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/HibernateError.xml
+END
+Job1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/Job1.xml
+END
+SimpleEmp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/SimpleEmp.xml
+END
+EmpNamedQuery.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/EmpNamedQuery.xml
+END
+EmpCountByJobDept.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/EmpCountByJobDept.xml
+END
+EmpNamedQuery2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/EmpNamedQuery2.xml
+END
+simpletest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/aa4h~svn/!svn/ver/26/trunk/aa4h/test/xmlqueries/simpletest.groovy
+END
